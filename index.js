@@ -10,10 +10,13 @@ const corsOptions = {
     methods: 'GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS',
     headers: 'Content-Type'
 }
+const version1 = require('./routers/version1')
 
 app.use(cors(corsOptions))
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
+
+app.use('/v1', version1)
 
 
 app.listen(port, host, () => console.log(`server running on http://${host}:${port}`))
