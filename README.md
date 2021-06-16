@@ -1,24 +1,26 @@
-# clone project
+# Clone Project
 ```
 git clone https://github.com/rickyackerman/rest-api.git
 ```
-
-# install node module
-## mengunakan npm
+# Install node module
 ```
 npm install
 ```
-## mengunakan yarn
+# Koneksi ke mongodb
 ```
-yarn install
+Buat file .env di folder root dengan isian 
+HOST=127.0.0.1 (optional)
+PORT=8000 (optional)
+MONGODB_URI=//link-ke-mongodb (wajib)
 ```
 
-# import sample data
-## mengunakan npm
+# Test koneksi
 ```
-npm run data:import
+yarn db:test
 ```
-## mengunakan yarn
+
+# Import sample data
 ```
-yarn data:import
+yarn db:import
 ```
+

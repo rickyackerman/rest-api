@@ -6,7 +6,8 @@
   "scripts": {
     "test": "nodemon index",
     "start": "node index",
-    "data:import": "node dataImport"
+    "db:import": "node dataImport",
+    "db:test":"node config/db"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   "author": "Ricky Ackerman",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",

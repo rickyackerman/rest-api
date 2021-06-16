@@ -1,5 +1,3 @@
-require('../config/db')
-
 const productSeeder = [
     {
         name: 'Tunik yoshi moscrepe all size terbaru',
