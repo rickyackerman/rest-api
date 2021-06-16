@@ -1,3 +1,5 @@
+const User = require('../models/User')
+
 const register = async (req, res, next) => {
 	const response = new User({
 		name: req.body.name,
